@@ -1,0 +1,108 @@
+.footer{
+    max-width:100%;
+    .sub{
+        width:100%;
+        box-sizing: border-box;
+        background-color:$dark-g;
+        padding:30px 122px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        .logo-light{
+            display: flex;
+            color:#fff;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.5;
+             img{
+                width:40px;
+                height:40px;
+                margin-right:20px ;
+            }
+        }
+        form{
+            display: flex;
+            position: relative;
+        }
+        .txt{
+            padding:16px 30px 16px 64px;
+        }
+        .mail{
+            position: absolute;
+            top:16px;
+            left:20px;
+        }
+        .btn{
+            width:100%;
+            background-color:$yellow;
+            border:none;
+            padding: 17px 20px;
+        }
+    }
+    .info{
+        background-color:$light;
+        padding:39px  122px  30px;
+        display: flex;
+        justify-content: space-between;
+        .right-info{
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-end;
+            color:$dark-g;
+            h2{
+                writing-mode: vertical-rl;
+                text-indent:-10px;
+                font-size:24px ;
+                font-weight: bold;
+                line-height: 1.5;
+                margin-bottom:70px;
+            }  
+        }
+        .logotype-sm-dark{
+            width:171px;
+            margin-bottom:100px;
+        }
+        .info-text{
+            margin-bottom: 30px;
+            li{
+                margin-bottom: 10px;
+                color:$dark-g;
+                font-size: 16px;
+                font-family: Helvetica;
+            }
+        }
+        .social{
+            display: flex;
+            img{
+                width:32px;
+                height:32px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .sub{
+        flex-direction: column;
+        padding:30px 0;
+        .logo-light{
+            max-width:100%;
+            margin-bottom: 33px;
+        }
+    }
+    .info{
+        flex-direction: column;
+        padding-left:30px;
+        .logotype-sm-dark{
+            margin-bottom:40px;
+        }
+        .right-info{
+            align-content: flex-start;
+            margin-top:23px;
+            h2{
+                display: none;
+            }
+        }
+    }
+}
